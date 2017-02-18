@@ -35,14 +35,11 @@ def inputMoney():
 def exit():
     tkinter.messagebox.showinfo("Exit", "command =" )
 
-while True:
-    menu = int(input("What would you like to do?" "\n\"))
-    if menu == 1:
 A = tkinter.Button(top, text = "1] Setting Up Budget", command = setUpBudget)
-A.pack()
-    if menu == 2:
 B = tkinter.Button(top, text = "2] View Budget", command = viewBudget)
-B.pack()
-    if menu == 3:
 C = tkinter.Button(top, text = "3] Exit", command = exit)
+
+A.pack()
+B.pack()
 C.pack()
+top.mainloop()
