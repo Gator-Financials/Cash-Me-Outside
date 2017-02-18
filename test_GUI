@@ -1,0 +1,48 @@
+import tkinter
+import tkinter.messagebox
+
+top = tkinter.Tk()
+
+
+
+def numOfCategories():
+    top = TK()
+    L1 = Label(top, text = "Number of categories")
+    L1.pack(side = LEFT)
+    E1 = Entry(top, bd = 5)
+    E1.pack(side = RIGHT)
+
+
+def money():
+    top = TK()
+    L1 = Label(top, text = "Amount of money")
+    L1.pack(side = LEFT)
+    E1 = Entry(top, bd = 5)
+    E1.pack(side = RIGHT)
+
+
+def setUpBudget():
+    budget = tkinter.Button(top, text = "1] How many different categories?",
+    command = numOfCategories)
+    inputMula = tkinter.Button(top, text = "2] Would you like to input any money?",
+    command = money)
+    budget.pack()
+    inputMula.pack()
+def viewBudget():
+    tkinter.messagebox.showinfo("View Budget", "command =" )
+def inputMoney():
+    tkinter.messagebox.showinfo("Input Money", "command =" )
+def exit():
+    tkinter.messagebox.showinfo("Exit", "command =" )
+
+while True:
+    menu = int(input("What would you like to do?" "\n\"))
+    if menu == 1:
+A = tkinter.Button(top, text = "1] Setting Up Budget", command = setUpBudget)
+A.pack()
+    if menu == 2:
+B = tkinter.Button(top, text = "2] View Budget", command = viewBudget)
+B.pack()
+    if menu == 3:
+C = tkinter.Button(top, text = "3] Exit", command = exit)
+C.pack()
