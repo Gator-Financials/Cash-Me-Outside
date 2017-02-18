@@ -1,12 +1,11 @@
 import tkinter
 import tkinter.messagebox
+from tkinter import *
 
 top = tkinter.Tk()
 
-
-
 def numOfCategories():
-    top = TK()
+    top = tkinter.Tk()
     L1 = Label(top, text = "Number of categories")
     L1.pack(side = LEFT)
     E1 = Entry(top, bd = 5)
@@ -14,7 +13,7 @@ def numOfCategories():
 
 
 def money():
-    top = TK()
+    top = tkinter.Tk()
     L1 = Label(top, text = "Amount of money")
     L1.pack(side = LEFT)
     E1 = Entry(top, bd = 5)
